@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>BUGCRAFT</title>
+  <link rel="stylesheet" href="bugcraft.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="bclogo.png">
+  <script>
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+    document.addEventListener('keydown', function(e) {
+      if (
+        e.keyCode === 123 ||
+        (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 67)) ||
+        (e.ctrlKey && e.keyCode === 85) ||
+        (e.ctrlKey && (e.key === '+' || e.key === '-' || e.key === '='))
+      ) {
+        e.preventDefault();
+      }
+    });
+  </script>
+
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">BUGCRAFT</h1>
+
+    <div class="info-box" onclick="location.href='read.html'">
+    <div class="read-label">READ ME</div></div>
+
+    <div class="info-box" onclick="copyText('play.bugcraft.site', 'ipMessage')">
+      <div class="info-label">Server Address:</div>
+      <div class="info-text">play.bugcraft.site</div>
+      <div id="ipMessage" class="message"></div></div>
+
+    <div class="info-box" onclick="copyText('9111', 'portMessage')">
+      <div class="info-label">Port:</div>
+      <div class="info-text">9111</div>
+      <div id="portMessage" class="message"></div>
+
+  <script>
+    function copyText(text, messageId) {
+      navigator.clipboard.writeText(text).then(function() {
+        const msg = document.getElementById(messageId);
+        msg.textContent = 'Copied!';
+        setTimeout(() => msg.textContent = '', 1500);
+      });
+    }
+  </script>
+</body>
+</html>
