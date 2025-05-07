@@ -12,6 +12,7 @@ html, body {
     user-select: none;
     background-attachment: fixed;
 }
+
 .container {
     width: 90%;
     max-width: 400px;
@@ -22,7 +23,25 @@ html, body {
     text-align: center;
     backdrop-filter: blur(4px);
     box-sizing: border-box;
+    animation: borderAnimation 2s infinite;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
+
+@keyframes borderAnimation {
+    0% {
+        border-color: #ff4c4c;
+        box-shadow: 0 0 10px #ff4c4c;
+    }
+    50% {
+        border-color: #ff9999;
+        box-shadow: 0 0 20px #ff4c4c;
+    }
+    100% {
+        border-color: #ff4c4c;
+        box-shadow: 0 0 10px #ff4c4c;
+    }
+}
+
 h1 {
     font-family: 'Orbitron', sans-serif;
     font-size: 2.5em;
@@ -35,6 +54,7 @@ h1 {
     background-clip: text;
     color: transparent;
 }
+
 .read-box {
     background-color: #1a1a1a;
     font-family: 'Orbitron', sans-serif;
@@ -43,6 +63,7 @@ h1 {
     border-radius: 8px;
     transition: background-color 0.2s;
 }
+
 .back-box {
     background-color: #1a1a1a;
     font-family: 'Orbitron', sans-serif;
@@ -52,10 +73,12 @@ h1 {
     transition: background-color 0.2s;
     display: inline-block;
 }
+
 #backid:hover {
     cursor: pointer;
     background-color: #222;
 }
+
 #backtext {
     background: linear-gradient(90deg, #00FF99, #57C785);
     -webkit-background-clip: text;
