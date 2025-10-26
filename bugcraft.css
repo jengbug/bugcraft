@@ -107,3 +107,18 @@ h1 {
   background-clip: text;
   color: transparent;
 }
+.message {
+  color: #00ff99;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 5px;
+  text-shadow: 0 0 5px rgba(0, 255, 153, 0.5);
+  transition: opacity 0.3s ease;
+}
+.message:not(:empty) {
+  opacity: 1;
+}
+
+.message:empty {
+  opacity: 0;
+}
