@@ -2,8 +2,7 @@
   -webkit-tap-highlight-color: #fff0;
 }
 
-body,
-html {
+body, html {
   height: 100%;
   margin: 0;
   padding: 20px;
@@ -37,12 +36,10 @@ html {
     border-color: #ff4c4c;
     box-shadow: 0 0 10px #ff4c4c;
   }
-
   50% {
     border-color: #0f9;
     box-shadow: 0 0 20px #0f9;
   }
-
   100% {
     border-color: #ff4c4c;
     box-shadow: 0 0 10px #ff4c4c;
@@ -88,16 +85,6 @@ h1 {
   color: #fff;
 }
 
-.toggletext {
-  font-family: Orbitron, sans-serif;
-  font-size: 0.65em;
-  background: linear-gradient(90deg, #0f9, #57c785);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
 .locationtext {
   font-family: Orbitron, sans-serif;
   font-size: 0.85em;
@@ -107,6 +94,7 @@ h1 {
   background-clip: text;
   color: transparent;
 }
+
 .message {
   color: #00ff99;
   font-weight: bold;
@@ -115,6 +103,7 @@ h1 {
   text-shadow: 0 0 5px rgba(0, 255, 153, 0.5);
   transition: opacity 0.3s ease;
 }
+
 .message:not(:empty) {
   opacity: 1;
 }
