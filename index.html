@@ -43,24 +43,18 @@
 <body>
   <div class="container">
     <h1 id="title">BUGCRAFT</h1>
+
     <div class="info-box" onclick="copyText('play.bugcraft.site', 'ipMessage')">
-      <div class="info-label">Server Address:</div>
+      <div class="info-label">Philippine server:</div>
       <div class="info-text">play.bugcraft.site</div>
       <div id="ipMessage" class="message"></div>
     </div>
-    <div class="info-box" onclick="togglebackup('backupdiv')">
-      <div class="toggletext">Backup server address for high latency</div>
+    
+    <div class="info-box" onclick="copyText('sg.bugcraft.site', 'sgMessage')">
+      <div class="info-label">Singapore Server:</div>
+      <div class="info-text">sg.bugcraft.site</div>
+      <div id="sgMessage" class="message"></div>
     </div>
-    <div id="backupdiv" style="display: none;">
-      <div class="info-box" onclick="copyText('hk.bugcraft.site', 'hkMessage')">
-        <div class="locationtext">hk.bugcraft.site (down)</div>
-    <div id="hkMessage" class="message"></div>
-      </div>
-        <div class="info-box" onclick="copyText('sg.bugcraft.site', 'sgMessage')">
-        <div class="locationtext">sg.bugcraft.site</div>
-     <div id="sgMessage" class="message"></div>
-      </div>
+  </div>
 </body>
 </html>
-
-
